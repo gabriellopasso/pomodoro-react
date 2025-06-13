@@ -8,6 +8,7 @@ import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
 export function App() {
   return (
     <>
@@ -18,15 +19,24 @@ export function App() {
         <Menu />
       </Container>
       <Container>
+        <CountDown />
+      </Container>
+
+      <Container>
         <form className='form'>
           <div className='formRow'>
-            <DefaultInput />
+            <DefaultInput
+              labelText='Task'
+              id='xanax'
+              type='string'
+              placeholder='Digite algo'
+            />
           </div>
           <div className='formRow'>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
           <div className='formRow'>
-            <p>Ciclos</p>
+            <Cycles />
           </div>
           <div className='formRow'>
             <p>0 0 0 0 0</p>
