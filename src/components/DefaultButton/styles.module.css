@@ -8,9 +8,27 @@
   min-width: 24rem;
   padding: .8rem;
   border-radius: .8rem;
+  margin: 4.8rem 0;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
 }
 
 .buttom svg {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+
+}
+
+button:hover{
+  filter: brightness(80%);
+}
+
+.green {
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+}
+
+.red {
+  background-color: var(--error);
+  color: var(--text-over-error);
 }

@@ -11,7 +11,11 @@ import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
+import { Footer } from './components/Footer';
+
+
 export function App() {
+  
   return (
     <>
       <Container>
@@ -28,10 +32,12 @@ export function App() {
         <form className='form'>
           <div className='formRow'>
             <DefaultInput
-              labelText='Task'
+              labelText= 'Task'
               id='xanax'
               type='string'
               placeholder='Digite algo'
+              //disabled
+              defaultValue='valor preenchido'
             />
           </div>
           <div className='formRow'>
@@ -45,6 +51,10 @@ export function App() {
           </div>
         </form>
       </Container>
+       <Container>
+        <Footer />
+      </Container>
+
     </>
   );
 }
